@@ -23,19 +23,24 @@ A modern web application template built with React, TypeScript, and Tailwind CSS
 git clone https://github.com/yourusername/react-typescript-tailwind-setup-project.git
 ```
 
-2. Install dependencies:
-```bash
+2. Remove package-lock.json
+``` bash
 cd react-typescript-tailwind-setup-project
+rm package-lock.json
+```
+
+3. Install dependencies:
+```bash
 npm install
 # or
 yarn install
 ```
 
-3. Start the development server:
+4. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-4. Open your browser and visit `http://localhost:5173`
+5. Open your browser and visit `http://localhost:5173`
