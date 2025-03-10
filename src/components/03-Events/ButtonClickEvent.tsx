@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import { type MouseEvent } from 'react'
 
 const ButtonClickEvent = () => {
   const [clickCount, setClickCount] = useState(0);
   const [lastClickTime, setLastClickTime] = useState<string>('');
 
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
     setClickCount(prev => prev + 1);
     setLastClickTime(new Date().toLocaleTimeString());
     
