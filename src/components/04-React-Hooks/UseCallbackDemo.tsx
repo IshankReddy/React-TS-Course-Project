@@ -1,7 +1,7 @@
-import { useState, useCallback, memo } from 'react';
+import { useState, useCallback, memo, type ReactNode } from 'react';
 
 // Child component that uses the callback
-const Button = memo(({ onClick, children }: { onClick: () => void, children: React.ReactNode }) => {
+const Button = memo(({ onClick, children }: { onClick: () => void, children: ReactNode }) => {
   console.log(`${children} button rendered`);
   return (
     <button
