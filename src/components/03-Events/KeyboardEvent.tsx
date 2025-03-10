@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import { type KeyboardEvent } from "react";
 
 const KeyboardEvent = () => {
   const [keyPressed, setKeyPressed] = useState<string>('');
   const [keyCode, setKeyCode] = useState<string>('');
 
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+  const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
     setKeyPressed(event.key);
     setKeyCode(event.code);
   };
