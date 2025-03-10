@@ -31,17 +31,17 @@ const Header = ({ title, subtitle }: HeaderProps) => {
               {subtitle && <p className="text-sm text-blue-100">{subtitle}</p>}
             </div>
           </div>
-          
+
           <div className="flex flex-wrap gap-2">
             {[
               { num: 1, name: "Setup" },
               { num: 2, name: "Components" },
               { num: 3, name: "Events" },
-              { num: 4, name: "Router" },
-              { num: 5, name: "Hooks" },
-              { num: 6, name: "API" }
+              { num: 4, name: "Hooks" },
+              { num: 5, name: "Router" },
+              { num: 6, name: "API" },
             ].map(({ num, name }) => (
-              <button 
+              <button
                 key={num}
                 onClick={() => scrollToSection(`section-${num}`)}
                 className="flex items-center px-2.5 py-0.5 rounded-full text-sm font-medium bg-white bg-opacity-20 hover:bg-opacity-30 transition-colors"

@@ -1,4 +1,4 @@
-import Header from './components/02-01-Simple-Compenents/Header';
+import Header from './components/02-01-Simple-Compenents/NavBar';
 import Body from './components/Body';
 import Footer from './components/02-01-Simple-Compenents/Footer';
 
